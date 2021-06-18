@@ -34,7 +34,7 @@ public class HomeController {
 	@Autowired
 	private ContactusRepository contactusRepo;
 	
-	@GetMapping("/home")
+	@GetMapping("/")
 	public String home(Model model) {
 		model.addAttribute("title","Home - Smart Contact Manager");
 		return "home";
