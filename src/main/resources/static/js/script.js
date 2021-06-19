@@ -31,7 +31,7 @@ const search=()=>{
 		console.log(query);
 		//sending request to server
 
-		let url=`http://localhost:9090/search/${query}`;
+		let url=`https://ec2-63-33-239-176.eu-west-1.compute.amazonaws.com:5432/search/${query}`;
 		fetch(url).then((response)=>{
 			return  response.json();
 
